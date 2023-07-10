@@ -1,0 +1,309 @@
+:root {
+    --light: #f5f5f5;
+    --white: #FFFFFF;
+    --light-gray: #F5F5F5;
+    --light-blue: #58A4B0;
+    --mint-green: #C5D8D1;
+    --light-peach: #FFD3B5;
+    --parrafo: #2b2c2dae;
+    --blue-dark: #192229;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background: var(--light);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+header .logo_header img{
+    width: 80px;
+}
+header .navbar ul{
+    display: flex;
+    gap: 1rem;
+}
+
+header .navbar ul li a{
+    color: var(--light-blue);
+    font-weight: 900;
+    border-bottom: 1px solid var(--mint-green);
+    font-size: 1.1rem;
+}
+.main{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+}
+.row .c1{
+    background: url(../images2/doctora.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    background-position: center center;
+}
+.row .c2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.row .c2 .text--contain h1{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--light-blue);
+    margin: 1rem 0;
+}
+
+.row .c2 .text--contain p{
+    text-align: center;
+    margin: 1rem 0;
+    color: var(--parrafo);
+    font-weight: 500;
+}
+.row .c2 .link--bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: inherit;
+    font-size: 1.2rem;
+    color: var(--light-gray);
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    height: 50px;
+    background: var(--light-blue);
+}
+
+/* Mision Vision y Valores */
+
+.services--container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--blue-dark);
+    color: var(--light);
+    gap: 1rem;
+    padding: 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+    border-radius: 50px;
+    margin-bottom: 3rem;
+}
+
+.services--container .card--contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.services--container .card--contain .title--card{
+    padding: .5rem 1.2rem;
+    background-color: var(--light);
+    color: var(--blue-dark);
+    border-radius: 30px;
+}
+.services--container .card--contain .paragraph--card{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.btn-w100{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    outline: 2px solid var(--light-blue);
+    font: inherit;
+    font-weight: 900;
+    color: var(--blue-dark);
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+.btn-w100:hover{
+    background-color: var(--light-blue);
+    color: var(--blue-dark);
+    transition: .3s ease;
+    box-shadow: 0 5px 16px rgba(0, 223, 223, .5);
+}
+/* Recomendaciones */
+
+.recomendaciones{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+.recomendaciones .recomendacion--title{
+    color: var(--light-blue);
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+.recomendaciones .row--reco{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card--reco{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--blue-dark);
+    color: var(--light);
+}
+.card--reco .row--user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--light);
+}
+.card--reco .avatar--contain{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.card--reco .avatar--contain img{
+    border: 1px solid var(--light);
+    border-radius: 50%;
+    width: 50px;
+}
+.card--reco .avatar--contain .avatar--name{
+    font-weight: 500;
+}
+.card--reco .stars svg{
+    width: 20px;
+}
+.card--reco .coment{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: start;
+    padding: 1rem 0;
+}
+
+/* Footer */
+
+footer{
+    margin-top: 3rem;
+    background: var(--blue-dark);
+   /*  display: flex;
+    flex-direction: column;
+    align-items: center; */
+    gap: 1rem;
+    padding: 20px;
+}
+.column-list{
+    display: flex;
+    flex-direction: column;
+    color: var(--light);
+    gap: 1rem;
+}
+.column-list .list-group{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    font-weight: 700;
+}
+.column-list img{
+    width: 40px;
+}
+
+.logo--footer{
+    display: none;
+    width: 100px;
+    margin: 2rem 0;
+}
+
+.social--media{
+    display: flex;
+    gap: 1rem;
+}
+.social--media img{
+    width: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--light);
+}
+img{
+    width: 100%;
+}
+
+@media screen and (min-width: 720px){
+    .row{
+        background-color: #f5f5f5;
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2358a4b0' fill-opacity='0.15'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");   
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+    .row .c1{
+        width: 50%;
+        height: 70vh;
+        background-size: cover;
+    }
+    .row .c2{
+        width: 50%;
+    }
+    .row .c2 .link--bottom{
+        max-width: 300px;
+    }
+    .services--container{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        margin: 0;
+        margin-bottom: 3rem;
+    }
+    .services--container img{
+        width: 200px;
+    }
+    .services--container .card--contain{
+        width: 500px;
+    }
+    .btn-w100{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .recomendaciones .row--reco{
+        flex-direction: row;
+    }
+    .card--reco{
+        width: 500px;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    footer .logo--footer{
+        display: block;
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assest/css/turnos.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <figure class="logo_header">
+            <img src="assest/images/logo.svg" alt="">
+        </figure>
+        <nav class="navbar">
+            <ul>
+                <li><a href="turnos.html">Turnos</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <form action="" method="post" id="turnoForm">
+            <h1>Solicitar turno</h1>
+            <div class="form-group">
+            <label for="select">Turno para</label>
+                <select name="select" id="select">
+                    <option value="Seleccionar">Seleccionar</option>
+                    <option value="Pediatria">Pediatria</option>
+                    <option value="Ginecologia">Ginecologia</option>
+                    <option value="Traumatologia">Traumatologia</option>
+                    <option value="Reumatologia">Reumatologia</option>
+                    <option value="Analisis de sangre">Analisis de sangre</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">Nombre y Apellido</label>
+                <input type="text" name="name" id="name" placeholder="Nombre Completo">
+            </div>
+            <div class="form-group">
+                <label for="dni">N° de docuemnto</label>
+                <input type="text" name="dni" id="dni" placeholder="00.000.000">
+            </div>
+            <div class="form-group">
+                <label for="date">Fecha de nacimiento</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="ejemplo@ejemplo.com">
+            </div>
+            <button type="submit">Confirmar</button>
+        </form>
+    </main>
+
+    <script src="client.js"></script>
+</body>
+</html>
